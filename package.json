@@ -3,11 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "tests:all": "playwright test --config=playwright.config.js",
+    "tests:chrome": "playwright test --config=playwright.config.js --project=Chromium --headed",
+    "tests:firefox": "playwright test --config=playwright.config.js --project=Firefox --headed",
+    "tests:webkit": "playwright test --config=playwright.config.js --project=Webkit --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@faker-js/faker": "^8.0.2",
     "@playwright/test": "^1.36.2"
   }
 }
