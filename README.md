@@ -1,4 +1,7 @@
 # Automação de Testes com Playwright
+
+[![Playwright Tests](https://github.com/juniorschmitz/senac-playwright/actions/workflows/playwright.yml/badge.svg)](https://github.com/juniorschmitz/senac-playwright/actions/workflows/playwright.yml)
+
 ## Descrição do Projeto
 Este é um projeto de automação de testes com Playwright. O Playwright é uma biblioteca para automação de testes em navegadores que permite que você escreva testes confiáveis e eficientes. Ele oferece uma interface simples para criar scripts de automação para interações de usuário simuladas.
 

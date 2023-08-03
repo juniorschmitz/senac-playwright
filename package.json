@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "tests:all": "playwright test --config=playwright.config.js",
+    "tests:ci": "playwright test --config=playwright.config.js --grep @ci",
     "tests:chrome": "playwright test --config=playwright.config.js --project=Chromium --headed",
     "tests:firefox": "playwright test --config=playwright.config.js --project=Firefox --headed",
     "tests:webkit": "playwright test --config=playwright.config.js --project=Webkit --headed"

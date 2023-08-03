@@ -1,7 +1,7 @@
 // @ts-check
 const { test, expect } = require('@playwright/test');
 
-test.describe('Parabank', () => {
+test.describe('Parabank @ci', () => {
   test('Login', async ({ page }) => {
     await page.goto('https://parabank.parasoft.com/parabank/index.htm');
     await page.fill('input[name="username"]', 'john');

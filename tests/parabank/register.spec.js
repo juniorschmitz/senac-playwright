@@ -3,7 +3,7 @@ const { test, expect } = require('@playwright/test');
 import { faker } from '@faker-js/faker';
 
 test.describe('Parabank', () => {
-  test.only('Register', async ({ page }) => {
+  test('Register @ci', async ({ page }) => {
     // Load Parabank Page
     await page.goto('https://parabank.parasoft.com/parabank/index.htm');
     
