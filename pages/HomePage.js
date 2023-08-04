@@ -8,6 +8,7 @@ export class HomePage {
     this.btnLogin = page.locator('button[data-testid="entrar"]');
     this.btnLogout = page.locator('button[data-testid="logout"]');
     this.msgLoggedIn = page.locator('p.lead');
+    this.linkRegisterProducts = page.locator('a[data-testid="cadastrar-produtos"]');
   }
 
   async load() {
@@ -23,5 +24,9 @@ export class HomePage {
   async validateLoggedIn() {
     await expect(this.btnLogout).toBeVisible( { timeout: 10000 } );
     await expect(this.msgLoggedIn).toContainText('Este é seu sistema para administrar seu ecommerce.');
+  }
+
+  async accessProductPage() {
+    await this.linkRegisterProducts.click();
   }
 }
