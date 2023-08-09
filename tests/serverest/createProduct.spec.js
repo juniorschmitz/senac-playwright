@@ -16,7 +16,7 @@ test.describe('Serverest', () => {
     await homePage.validateLoggedIn();
   });
 
-  test('Create Product @ci', async ({ page }) => {
+  test('Create Product', async ({ page }) => {
     await homePage.accessProductPage();
 
     let productName = faker.internet.userName() + "123";

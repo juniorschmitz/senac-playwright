@@ -34,5 +34,11 @@ Se você quiser executar os testes sequencialmente e em um navegador apenas, pod
 npm run tests:<navegador>
 ```
 
+Para executar testes por tags:
+
+```
+playwright test --config=playwright.config.js --grep <@tag>
+```
+
 ## Licença
 Este projeto está licenciado sob os termos da licença MIT.
