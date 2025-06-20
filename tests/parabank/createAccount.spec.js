@@ -27,3 +27,4 @@ test.describe('Parabank @ci', () => {
     await expect(page.locator('#accountId')).toContainText(createdAccountId);
   });
 });
+
